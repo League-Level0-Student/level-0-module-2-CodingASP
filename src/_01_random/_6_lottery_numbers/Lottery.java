@@ -9,12 +9,12 @@ public class Lottery {
 		Random ran = new Random();
 		String Numbers = "";
 		for (int count = 0; count < 5; count++)
-			
+
 		{
 			int randomChoice = ran.nextInt(100 - 10 + 1) + 1;
 
-			 Numbers += randomChoice +" ";
-			
+			Numbers += randomChoice + " ";
+
 		}
 		JOptionPane.showMessageDialog(null, Numbers);
 	}
