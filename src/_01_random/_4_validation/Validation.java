@@ -28,7 +28,7 @@ JOptionPane.showMessageDialog(null, "You have the best laugh!");
 JOptionPane.showMessageDialog(null, "I bet you make babies smile!");
 		else if (randomNumber ==3)
 JOptionPane.showMessageDialog(null, "You light up the room!");
-		else if (randomNumber ==4)
+		else (randomNumber ==4)
 JOptionPane.showMessageDialog(null, "You're like sunshine on a rainy day!");
 		count += 1;
 	}
