@@ -17,7 +17,7 @@ public class SafeCracker {
 	 * If you cannot play sound on this computer, set canPlaySounds to false.
 	 * If you are not sure, ask your teacher 
 	 * *****************/
-	boolean canPlaySounds = true;
+	boolean canPlaySounds = false;
 	
 	
 	public static void main(String[] args) {
@@ -28,14 +28,16 @@ public class SafeCracker {
 		/*
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
-		 */		
-
+		 */	
+		
+		for (int i=0;i<9999999;i++) {
+tryCode(0+i);}
 	}
 
 	 void tryCode(int guess) {
 		System.out.println("trying " + guess);
 
-		int secretCode = 9999999 - wekncrzpasfdkjhcfjse;
+		int secretCode = 9_999_999 - wekncrzpasfdkjhcfjse;
 
 		if (guess == secretCode) {
 			JOptionPane.showMessageDialog(null, "Congratulations! You cracked the safe with " + guess);
