@@ -1,9 +1,11 @@
-/*** When you are done, this program will draw an ellipse 
+ /*** When you are done, this program will draw an ellipse 
      that jumps to new location each time you click on it.
 ***/
  
  // 1. Create three integer variables to represent the x, y, and the size of the ellipse
-       
+      int x = 50;
+      int y = 50;
+      int size = 50;
     void setup() {
       // 2. Set the size of your sketch
     size(1000,1000);
@@ -13,9 +15,10 @@
     
       // 3. Set the background color of your sketch
       background(#000000);
+      
       // 4. Draw an ellipse using the variables created at the top of the sketch for the location and size of your ellipse. 
       //    Make sure it fits in the window. Change the variables if it does not.
-    ellipse(50,50,50,50);
+    ellipse(x,y,size,size);
    fill(#FF0000);
     
     }
@@ -23,12 +26,15 @@
     /******** This method gets called automatically when you press the mouse ************/
     void mousePressed() {
       //5. Create an integer variable called distance
-      int distance = getDistanceFromMouse(50,50);
+      int distance = getDistanceFromMouse(x,y);
       //6. The getDistanceFromMouse() method below returns a number.
       //   Set the value of your distance variable to the value returned by the getDistance method
       //   You will need to pass the x and y location of your ellipse to this method.
-        if (distance < 50);{
-         x = (50) random(20);
+      
+        if (distance < 50){
+        
+         x = (int) random(width);
+         y = (int) random(height);
         }
           
       //7.  Use an if statement to check if your distance variable is < the radius of the ellipse
